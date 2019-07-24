@@ -1,6 +1,9 @@
 require("dotenv").config();
+require(bands.js)
 
 var keys = require("./keys.js");
+
+var userInput = process.argv.slice(3).join(" ");
 
 //var spotify = new Spotify(keys.spotify);
 
