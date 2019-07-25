@@ -2,6 +2,8 @@
  var moment = require("moment")
  var fs = require("fs")
 
+ var divider = "\n------------------------------------------------------------\n\n";
+
  var Bands = function () {
      this.getBand = function (artist) {
          var URL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
@@ -16,7 +18,7 @@
                  "Date of the Event " + moment(jsonData.datetime).format("MM/DD/YYYY")
              ].join("\n\n")
 
-             fs.appendFile("log.txt", aritstData, function (err) {
+             fs.appendFile("log.txt", aritstData, divider, function (err) {
                  if (err) throw err;
                  console.log(aritstData);
 
