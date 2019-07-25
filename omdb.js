@@ -7,7 +7,7 @@ var Movie = function () {
 
     this.getFilm = function (film) {
         var URL = "http://www.omdbapi.com/?apikey=trilogy&plot=short&t=" + film
-
+            
 
         axios.get(URL)
             .then(function (response) {

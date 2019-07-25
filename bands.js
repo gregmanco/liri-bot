@@ -8,19 +8,19 @@
      this.getBand = function (artist) {
          var URL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"
 
-         axios.get(URL).then(function (response) {
+         axios.get(URL).then(function(response) {
              var jsonData = response.data[0]
-             console.log(jsonData)
+             
 
-             var aritstData = [
+             var artistData = [
                  "Name of Venue  " + jsonData.venue.name,
                  "Venue Location " + jsonData.venue.city,
                  "Date of the Event " + moment(jsonData.datetime).format("MM/DD/YYYY")
              ].join("\n\n")
 
-             fs.appendFile("log.txt", aritstData, divider, function (err) {
+             fs.appendFile("log.txt", artistData + divider, function (err) {
                  if (err) throw err;
-                 console.log(aritstData);
+                 console.log(artistData);
 
 
              })
