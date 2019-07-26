@@ -25,8 +25,7 @@ function prompt(command, userInput) {
      if (!userInput ) {
         userInput = "Mr. Nobody"
      }
-     movie.getFilm(userInput);
-      console.log("this is for movie-this")
+     
 
    } else if (command === "do-what-it-says") {
       console.log("this is for do-what-it-says")
