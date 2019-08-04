@@ -33,3 +33,36 @@ Example of use with Default Inputs used: https://drive.google.com/file/d/1SJarCm
 Example of use with User Inputted commands: https://drive.google.com/file/d/1jSTrAfwKKIvYtsoDdWhjR3It0EaWpncv/view
 
 
+## Usage
+
+1. Clone from git@github.com:gregmanco/liri-bot.git
+
+Example in terminal: git clone git@github.com:gregmanco/liri-bot.git
+
+2. NPM Install (Should Install the required packages used but if not use listed NPM packages above) and node.js
+
+Example in terminal: npm install (while located in the folder)
+
+3. Use one of the following commands
+
+    node liri.js movie-this <insert movie here>
+
+    Returns the Title, Year of Release , IMDB Rating , Rotten Tomato Score, Language , Plot and Actors
+
+    node liri.js concert-this <insert band/artist here>
+
+    Returns the Venue, Location and Date of the event.
+
+    node liri.js spotify-this-song <input song here> 
+    
+    Returns the following information Artist, The song's name, A preview link of the song, 
+    The album that the song is from
+
+
+    node liri.js do-what-it-says
+
+    Returns the song or data from random.txt file and passes it to the spotify api. It currently only has Blackstreet Boys "I Want It That Way"
+
+
+Author: Gregory Manco
+
